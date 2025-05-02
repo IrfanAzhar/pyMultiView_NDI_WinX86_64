@@ -15,7 +15,8 @@ DPENDENCIES
 3.  NDI SDK 5
 4.  PyQT6
 5.  opencv-python
-6.  Windows 10
+6.  ndi-python
+7.  Windows 10
 
 NOTE:
 1.   Trademarks and copyrights of all the relevant entities belong to their rightful owners.
