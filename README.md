@@ -21,6 +21,7 @@ DPENDENCIES
 NOTE:
 1.   Trademarks and copyrights of all the relevant entities belong to their rightful owners.
 2.   Correct running of this project is strictly conditional with the above-mentioned elements.
+3.   This project will work well in Linux OS if the NDI setup there is not dependent upon NDI Discovery Service.
 
 LICENSE:
   My name is Doctor Irfan Azhar. I am new to the github. This project is covered under the license of Github conventions. This project is free for all for learning, testing and hobby coding. No commercial gains may be accrued from direct or indirect use of this script without my permission.
