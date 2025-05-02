@@ -7,7 +7,6 @@ from PyQt6.QtGui import QPixmap, QImage, QPainter, QPen
 from PyQt6.QtWidgets import QInputDialog
 from PyQt6 import QtCore
 from PyQt6.QtWidgets import  QWidget, QLabel, QVBoxLayout, QPushButton,  QHBoxLayout
-
 from ndiReceiverClass import NDI_Receiver
 from utils import findNDIsources
 
@@ -19,7 +18,6 @@ SCREEN_BORDER = 40
 COUNTER = 0
 X_FACTOR = 0
 Y_FACTOR = 0
-
 
 # ---------------------------------------------------------
 
@@ -40,10 +38,8 @@ class SingleWindow(QWidget):
 
         self.currentSourceName = 'SmallWindow'
         self.ndiNameString = 'SMALL_WINDOW'
-        # self.ndiStreamActiveFlag = 0
         self.ndiReceiver = NDI_Receiver()
         self.alreadyOpenStreamFlag = 0  # this flag is meant to indicate whether ndi reciver.connect(ndi_source)
-        # function has been called or not.
         self.playFlag = 0  # this flg is to control PLAY and PAUSE function
 
         self.nameStr = ''
@@ -104,7 +100,7 @@ class SingleWindow(QWidget):
             self.pause_video()
 
     def pause_video(self):
-        # self.playFlag = True
+        #self.playFlag = True
         self.playStreamFlag = 1
         self.buttonPlayVideo.setText("PAUSE")
 
@@ -182,7 +178,6 @@ class SingleWindow(QWidget):
                 except Exception as e:
                     print("SMALL_WINDOW process did not launch successfullty", e.args[0])
 
-                    # return
 
     # --------------------------------------------------------------------------------------------------------------
 
