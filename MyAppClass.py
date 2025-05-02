@@ -2,7 +2,6 @@ import os
 import ctypes
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QColor
-
 from PyQt6.QtWidgets import QWidget, QLabel, QPushButton, QHBoxLayout, QVBoxLayout
 from PyQt6 import QtCore
 import multiprocessing
@@ -21,8 +20,6 @@ BUTTON_COLOR = QColor("#FF0000") #("(0, 120, 120)")   #('green')
 X_FACTOR = 10
 Y_FACTOR = 10
 
-CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
-
 COUNTER = 0
 
 class MyApp(QWidget):
@@ -32,8 +29,6 @@ class MyApp(QWidget):
 
     def initUI(self):
         self.setWindowTitle("PY-MULTI-VIEW")
-        #self.setGeometry(100,100, 400, 100)
-        #self.setWindowFlags(QtCore.Qt.WindowType.WindowStaysOnTopHint | QtCore.Qt.WindowType.FramelessWindowHint)
         self.setWindowFlags(QtCore.Qt.WindowType.WindowStaysOnBottomHint | QtCore.Qt.WindowType.FramelessWindowHint)
         self.setStyleSheet("border: 2px solid black; border-radius: 5px; background_color = rgb(250, 250, 120); ")
         self.move(50, 10)
@@ -100,7 +95,7 @@ class MyApp(QWidget):
 
         self.setLayout(self.layout)
         self.showMaximized()
-        #self.show()
+        self.show()
 
     def findScreenResolution(self):
 
@@ -232,7 +227,6 @@ class MyApp(QWidget):
                 self.small_window_processes.append(process_name)
                 xPos = ((j + 1) * (smallwindowWidth + X_FACTOR))
             yPos = yPos + smallwindowHeight + Y_FACTOR
-
 
     def launch_single_window(self):
         #self.buttonMultipleWindow2by2.setEnabled(False)
