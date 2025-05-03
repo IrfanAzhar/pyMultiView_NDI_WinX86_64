@@ -24,7 +24,7 @@ NOTE:
 3.   This project will work well in Linux OS if the NDI setup there is not dependent upon NDI Discovery Service.
 
 LICENSE:
-  My name is Doctor Irfan Azhar. I am new to the github. This project is covered under the license of Github conventions. This project is free for all for learning, testing and hobby coding. No commercial gains may be accrued from direct or indirect use of this script without my permission.
+  I am new to the github. This project is covered under the license of Github conventions. This project is free for all for learning, testing and hobby coding. No commercial gains may be accrued from direct or indirect use of this script without my permission.
 
 DISCLAIMER:
   Those who use this code for learning, teaching, testing and any other purpose, must use it at their own repsonisbility. No responsibility explicit or implicit is relevant to this author.
